@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 import '../database/config_dao.dart';
 import '../models/config.dart';
-import '../services/agendamento_notificacoes_service.dart';
 
 class ConfiguracoesScreen extends StatefulWidget {
   const ConfiguracoesScreen({super.key});
@@ -78,7 +77,6 @@ class _ConfiguracoesScreenState extends State<ConfiguracoesScreen> {
     );
 
     await ConfigDAO().salvar(config);
-    await AgendamentoNotificacoesService.agendarParaUsuario(usuarioId);
 
     if (!mounted) return;
     Navigator.pop(context);

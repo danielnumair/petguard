@@ -16,12 +16,13 @@ import 'screens/cadastro_vermifugo_screen.dart';
 import 'screens/configuracoes_screen.dart';
 import 'screens/recuperar_senha_screen.dart';
 import 'services/notification_service.dart';
-import 'package:permission_handler/permission_handler.dart';
+import 'package:timezone/data/latest.dart' as tz;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // await NotificationService.init();
   await DatabaseHelper.instance.database;
+  tz.initializeTimeZones();
+  await NotificationService.init();
   runApp(const PetGuardApp());
 }
 
