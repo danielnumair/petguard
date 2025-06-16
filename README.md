@@ -47,7 +47,7 @@ PetGuard é um aplicativo desenvolvido em Flutter que tem como objetivo **gerenc
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/petguard.git
+git clone https://github.com/danielnumair/petguard.git
 cd petguard
 ```
 
@@ -107,25 +107,9 @@ dependencies:
   google_fonts
 ```
 
----
-
-## 🐛 Bugs e Contribuições
-
-- Relate bugs ou sugestões na aba [Issues](https://github.com/seu-usuario/petguard/issues).
-- Pull requests são bem-vindos!
-
----
-
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
 ## 🙌 Agradecimentos
 
 - Flutter & Dart Community
-- Documentação oficial dos pacotes utilizados
 
 ---
 
